@@ -26,7 +26,7 @@ We currently provide IPKs for the following Rust targets / OpenWrt package archi
 * __arm*-unknown-linux-musl*__: arm_arm1176jzf-s_vfp, arm_arm926ej-s, arm_cortex-a15_neon-vfpv4, arm_cortex-a5_vfpv4, arm_cortex-a7, arm_cortex-a7_neon-vfpv4, arm_cortex-a8_vfpv3, arm_cortex-a9, arm_cortex-a9_neon, arm_cortex-a9_vfpv3-d16, arm_fa526, arm_xscale
 * __loongarch64-unknown-linux-musl__: loongarch64_generic 
 * __mips*-unknown-linux-musl__: mips_24kc, mips_mips32, mipsel_24kc, mipsel_24kc_24kf, mipsel_74kc, mipsel_mips32
-* __powerpc*-unknown-linux-musl__: powerpc64_e5500, powerpc_464fp, powerpc_8548
+* __powerpc*-unknown-linux-musl__: powerpc64_e5500
 * __riscv64gc-unknown-linux-musl__: riscv64_riscv64
 * __x86_64-unknown-linux-musl__: x86_64
 
@@ -34,8 +34,9 @@ The following OpenWrt architectures don't compile due to "unsupported architectu
 * __arm*-unknown-linux-musl*__: arm_cortex-a7_vfpv4, armeb_xscale
 * __mips*-unknown-linux-musl__: mips64el_mips64r2, mips_4kec
 
-The following OpenWrt architectures don't compile due to "don't know how to configure OpenSSL for mips64-openwrt-linux-musl" error: 
+The following OpenWrt architectures don't compile due to "don't know how to configure OpenSSL for *-openwrt-linux-musl" error: 
 * __mips64-unknown-linux-musl__: mips64_mips64r2, mips64_octeonplus
+* __powerpc*-unknown-linux-musl__: powerpc_464fp, powerpc_8548
 
 The following OpenWrt architectures don't compile due to missing SSE support for Ring: 
 * __i*86-unknown-linux-musl__: i386_pentium-mmx, i386_pentium4
