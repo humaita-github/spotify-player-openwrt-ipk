@@ -69,7 +69,7 @@ jobs:
           ## Tier 3 #########################
           ## powerpc*-unknown-linux-musl ####
           - powerpc64_e5500              # OK
-          - powerpc_464fp                # OK
+          #- powerpc_464fp               ## Fails with: don't know how to configure OpenSSL for powerpc-unknown-linux-musl
           #- powerpc_8548                ## Fails with: don't know how to configure OpenSSL for powerpc-unknown-linux-musl
 
     steps:
